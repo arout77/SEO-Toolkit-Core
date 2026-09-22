@@ -1,0 +1,12 @@
+{
+    "name": "arout/seo-toolkit",
+    "type": "rhapsody-module",
+    "description": "Sitemap and robots.txt generated from your site's own route table, plus schema.org helper builders.",
+    "require": {
+        "php": "^8.3",
+        "arout/rhapsody-core": "^2.0"
+    },
+    "autoload": {
+        "psr-4": { "Arout\\SeoToolkit\\": "src/" }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "name": "arout/seo-toolkit",
+    "type": "rhapsody-module",
+    "version": "1.0.0",
+    "rhapsody_core": "^2.0",
+    "title": "SEO Toolkit",
+    "description": "Sitemap and robots.txt generated from your site's own route table, plus schema.org helper builders. Built by the Rhapsody Core Team.",
+    "category": "seo",
+    "license": "proprietary",
+    "author": { "name": "Andrew Rout" },
+    "provider": "Arout\\SeoToolkit\\ModuleProvider",
+    "permissions": {
+        "routes.register": {
+            "paths": ["/sitemap.xml", "/robots.txt"]
+        },
+        "settings.manage": {}
+    },
+    "settings_schema": [
+        { "key": "excluded_prefixes", "type": "string", "label": "Excluded path prefixes (comma-separated)", "default": "/auth,/login,/forgot-password,/reset-password,/payment" },
+        { "key": "excluded_controllers", "type": "string", "label": "Excluded controller classes (comma-separated FQCNs)", "default": "Rhapsody\\Core\\Controllers\\DocsController" },
+        { "key": "excluded_middleware", "type": "string", "label": "Excluded middleware keys (comma-separated)", "default": "auth" },
+        { "key": "change_frequency", "type": "select", "label": "Sitemap change frequency", "default": "weekly", "options": ["always", "hourly", "daily", "weekly", "monthly", "yearly", "never"] },
+        { "key": "robots_disallow", "type": "string", "label": "Additional robots.txt Disallow paths (comma-separated)", "default": "/auth,/login" }
+    ]
+}
