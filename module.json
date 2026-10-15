@@ -2,7 +2,7 @@
     "name": "arout/seo-toolkit",
     "type": "rhapsody-module",
     "version": "1.0.0",
-    "rhapsody_core": "^2.0",
+    "rhapsody_core": "^1.0",
     "title": "SEO Toolkit",
     "description": "Sitemap and robots.txt generated from your site's own route table, plus schema.org helper builders. Built by the Rhapsody Core Team.",
     "category": "seo",
